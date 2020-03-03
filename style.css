@@ -95,6 +95,15 @@ header.et-fixed-header {
     height: 70px;
     top: 5px;
 }
+
+_:-ms-input-placeholder, :root .et_header_style_left .logo_container {
+	position: absolute;
+    width: 100%;
+    height: 110px;
+    top: -15px;
+}
+
+
 .et_header_style_left .logo_container #logo {
 	height: 100%;
 	max-height: unset;
@@ -103,6 +112,12 @@ header.et-fixed-header {
 .et_header_style_left .et-fixed-header .logo_container {
     height: 35px;
     top: 2px;
+}
+
+
+_:-ms-input-placeholder, :root .et_header_style_left .et-fixed-header .logo_container {
+    height: 55px;
+    top: -6px;
 }
 
 
@@ -189,6 +204,17 @@ header.et-fixed-header #top-menu {
     bottom: -70px;
 	top: unset;
 }
+
+_:-ms-input-placeholder, :root .container.et_search_form_container.et_pb_search_visible {
+    top:65px;
+}
+
+
+:-ms-input-placeholder {
+    color:#003d8f !important;
+}
+
+
 /* HEADER - SEARCH - ONSCROLL */
 header.et-fixed-header #et_top_search,
 header.et-fixed-header .et_search_outer {
@@ -199,6 +225,12 @@ header.et-fixed-header .et_search_outer {
 	color: #ffffff !important;
 }
 /* CONTENT */
+
+#Blog {
+    width: 100%;
+}
+
+
 #Blog-Sektion {
 	padding-top: 75px;
 }
@@ -380,6 +412,24 @@ input {
 @media (max-width: 1199px) {
 	
 	
+}
+
+
+
+/* BLOGSTYLES BY K.BREMER */
+
+#Bloglist .et_pb_image_container {
+    margin: 0px;
+}
+
+#Bloglist .et_pb_post .post-meta a {
+    color: #003d8f;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+#Bloglist .published {
+    color:#666;
 }
 
 /* BLOG - GRID */

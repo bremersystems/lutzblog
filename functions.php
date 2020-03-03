@@ -266,7 +266,7 @@ function add_google_analytics() { ?>
 		gtag('config', 'UA-XXX', { 'anonymize_ip': true });
 	</script>
 <?php }
-add_action( 'wp_footer', 'add_google_analytics', 10 );
+add_action( 'wp_head', 'add_google_analytics', 10 );
 /****************************************************************************************/
 // SHRINK DASHBOARD MENU
 function remove_menus() {
@@ -297,12 +297,10 @@ add_filter( 'get_comments_pagenum_link', 'root_relative_permalinks');
 /****************************************************************************************/
 // GOOGLE TRACKING IM HEADER UND HTML-PART IM FOOTER
 function add_cookiebot() { ?>
-	<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="a53b60d8-1afd-46a0-ba1e-e0f739587880" type="text/javascript" async></script>
+<script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="e8000611-1633-42b6-be57-74a0d717c83e" data-blockingmode="auto" type="text/javascript"></script>
+	<script id="CookieDeclaration" src="https://consent.cookiebot.com/e8000611-1633-42b6-be57-74a0d717c83e/cd.js" type="text/javascript" async></script>
 <?php }
 add_action( 'wp_head', 'add_cookiebot', 10 );
 
-function add_cookiebot_html() { ?>
-	<script id="CookieDeclaration" src="https://consent.cookiebot.com/a53b60d8-1afd-46a0-ba1e-e0f739587880/cd.js" type="text/javascript" async></script>
-<?php }
-add_action( 'wp_footer', 'add_cookiebot_html', 10 );
+
 
